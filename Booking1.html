@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Golf gear selling website</title>
+
+<style>
+
+ h1 {
+ text-align: center;
+ border: 2px solid black;
+ margin-right: 80px;
+ margin-left: 300px;
+ color: white;
+ background-color: rgba(0, 0, 0, 0.3);
+ font-size: 100px;
+ }
+
+ p {text-align: center;}
+
+ input[type=text] {
+ width: 15%;
+ padding: 8px 10px;
+ margin: 8px 0;
+ box-sizing: border-box;
+ border: none;
+ border-radius: 15px;
+ background-color: hsl(0, 0%, 80%);
+ color: black;
+ font-family: 'Cinzel', serif;
+ }
+
+ button {
+ background-color: hsl(0, 0%, 80%);
+ border: none;
+ border-radius: 15px;
+ color: black;
+ padding: 15px 32px;
+ text-align: center;
+ display: inline-block;
+ font-size: 16px;
+ font-family: 'Cinzel', serif;
+ cursor: pointer;
+ margin-top: 20px;
+ }
+
+ input {
+ background-color: hsl(0, 0%, 80%);
+ border: none;
+ border-radius: 15px;
+ color: black;
+ padding: 8px 12px;
+ text-align: center;
+ display: inline-block;
+ font-size: 16px;
+ font-family: 'Cinzel', serif;
+ margin: 1px 1px 1px 1px;
+ cursor: pointer;
+ }
+
+ select {
+ width: 15%;
+ padding: 8px 20px;
+ border: none;
+ border-radius: 45px;
+ background-color: hsl(0, 0%, 80%);
+ font-family: 'Cinzel', serif;
+ }
+
+ label {
+ color: white;
+ padding: 6px;
+ min-height: 50px;
+ font-size: 32px;
+ font-family: 'Cinzel', serif;
+ resize: none;
+ } 
+
+ textarea {
+ width: 50%;
+ padding: 8px 12px;
+ border: none;
+ border-radius: 15px;
+ background-color: hsl(0, 0%, 80%);
+ font-size: 20px;
+ font-family: 'Cinzel', serif;
+ margin: 0 auto;
+ display: block;
+ }
+
+ legend {
+ background-color: hsl(0, 0%, 80%);
+ color: black;
+ padding: 5px 10px;
+ font-family: 'Cinzel', serif;
+ font-size: 20px;
+ }
+
+ body { 
+ background-image: url("golf.jpg");
+ background-repeat: no-repeat;
+ background-size: 120%;  
+ background-position: center;
+ background-color: grey;
+ }
+
+ body, main { width: 90vw; min-height: 90vh; }
+
+ ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ font-family: 'Cinzel', serif; 
+ font-size: 24px;
+ }
+
+ li {
+ float: left;
+ }
+
+ li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 40px;
+ text-decoration: none;
+ border-radius: 45px;
+ }
+
+ li a:hover {
+ background-color: rgba(0, 0, 0, 0.3);
+ }
+
+.form-center {
+ text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<footer>
+<nav>
+<ul> 
+ <li><a href="Index1.html">Main</a></li> 
+ <li><a href="Contacts1.html">Contact us</a></li>
+ <li><a href="Goals1.html">Goals</a></li>
+ <li><a href="Booking1.html">Booking</a></li>
+ <li><a href="Competitors1.html">Competitors</a>&nbsp;&nbsp;&nbsp;</li> 
+</ul>
+</nav>
+</footer>
+
+ <h1>Booking form</h1>
+
+ <form action="/action_page.php" target="_blank" method="post" class="form-center">
+
+ <label for="yourname">Your name:</label>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="text" id="yourname" name="yourname">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label for="PhoneNo">Phone No:</label>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="text" id="PhoneNo" name="PhoneNo">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <br><br> 
+
+ <label for="booking">Booking size:</label>
+  &nbsp;&nbsp;&nbsp;
+ <select id="booking" name="booking size">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+ <option value="7">7</option>
+ <option value="8+">8+</option>
+ </select>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label for="datetime">Date and time:</label>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="datetime-local" id="datetime" name="datetime" required>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <br><br><br> 
+
+<fieldset>
+
+ <legend>Booking reason </legend>
+ <input type="radio" id="B-day" name="booking_reason" value="B-day" required>
+ <label for="B-day">B-day</label><br>
+ <input type="radio" id="Anni" name="booking_reason" value="Anniversary" required>
+ <label for="Anni">Anniversary</label><br>
+ <input type="radio" id="Special" name="booking_reason" value="Special Day" required>
+ <label for="Special">Special&nbsp;day</label><br>
+ <input type="radio" id="Kids" name="booking_reason" value="Kids Party" required>
+ <label for="Kids">Kids&nbsp;party</label><br>
+ <input type="radio" id="Work" name="booking_reason" value="Work Promotion" required>
+ <label for="Work">Work&nbsp;promotion</label><br>
+ <input type="radio" id="Other" name="booking_reason" value="Other" required>
+ <label for="Other">Other</label><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</fieldset>
+ <br>
+
+ <p><label for="subject">Your notes:</label></p>
+ <textarea id="subject" name="subject" placeholder="Booking note..." style="height:200px"></textarea><br>
+
+ <button type="submit">Submit</button>
+
+</form>
+</body>
+</html>
